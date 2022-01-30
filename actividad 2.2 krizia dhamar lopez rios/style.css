@@ -1,0 +1,197 @@
+/*NavBar*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+#NavBar {
+    background-color: #eae1c7;
+    padding: 1% 10%;
+    padding-left: 0%;
+}
+
+#NavBar a {
+    color: #060302;
+}
+
+#navbarNav a{
+    color: #EFA392;
+}
+
+.navbar-icon-lg {
+    width: 5rem;
+    margin-right: 3rem;
+}
+
+.navbar-icon-sm{
+    display: none;
+}
+
+.navbar-brand {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #EFA392 !important;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(166,19,18, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav-item {
+    padding: 0 1.7rem;
+}
+
+.nav-link { 
+    font-size: 2rem;
+}
+
+/*Carousel*/
+#main-carousel .carousel-inner img {
+    max-height: 50vh;
+    object-fit: cover;
+    filter: grayscale(50%);
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/*carrusel*/
+#main-carousel h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#main-carousel p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.btn-carousel{
+    margin: 2% 3% 5% 0;
+}
+
+/*mision presentacion*/
+#features{
+    padding: 1% 10%;    
+    background-color: #fdf7e6;
+}
+
+#features h3{
+    font-weight: 900;
+}
+
+#features h2{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+#features p{
+    color: #8f8f8f;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.feature-icon{
+    color: #EFA392;
+    margin-bottom: 1rem; 
+}
+.feature-icon:hover{
+  color: #d56756;
+}
+
+/*quieres saber */
+#place-time h1{
+    margin-top: 5%;
+    color: #EFA392;
+    font-weight: 900;
+    text-align: center;
+}
+#place-time {
+    background-color: #eae1c7;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+/*Footer*/
+#footer {    
+    text-align: center ;
+    padding: 1rem 0 0.1rem;
+    color: black;
+}
+
+.footer-icon {
+    padding: 0 0.7rem;
+    color: #EFA392;
+}
+
+.footer-icon:hover {
+    color: #ff5137;
+}
+
+
+/*media*/
+
+@media only screen and (max-width: 560px) {
+    .btn-carousel {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1600px ) and (min-width:990px) {
+    .nav-link { 
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navbar-icon-lg {
+        display: none;
+    }
+
+    .navbar-icon-sm {
+        display: block;
+        width: 5rem;
+        margin-right: 3%;
+    }
+}
+
+@media only screen and (max-width: 400px ) {
+    .burger{
+        text-align: center;
+        min-width: 100%;
+    }
+    #NavBar {
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+    #main-carousel h1 {
+        font-size: 2.3rem;
+        font-weight: 900;
+    }
+}
